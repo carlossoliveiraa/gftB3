@@ -48,6 +48,7 @@ Para executar a solução, você precisará das seguintes ferramentas instaladas
 ## Testes
 
 ### Executando Testes no Backend
+<<<<<<< HEAD
 - No Visual Studio, use o `Test Explorer Gft.B3.Desafio.Tests` para rodar os testes unitários.
 
 ### Executando Testes no Frontend
@@ -70,12 +71,27 @@ bash
 Copiar código
 ng test
 Isso iniciará o Karma, abrirá um navegador e executará os testes.
+=======
+- No Visual Studio, use o `Test Explorer` para rodar os testes unitários.
+
+### Executando Testes no Frontend
+- Execute o seguinte comando no terminal dentro da pasta do frontend:
+>>>>>>> 0cfa6a453088f42ea3f01a76a1a00e81a29a6f0b
 
 
 ## Análise de Código
 - Recomendamos a instalação do SonarLint no Visual Studio para análise contínua de qualidade de código no backend.
 - Para o frontend, utilize o ESLint com Angular CLI para manter a qualidade e conformidade do código.
 
+<<<<<<< HEAD
  
 
  
+=======
+## Contribuições
+Contribuições são bem-vindas. Por favor, envie pull requests para a branch `develop` para revisão e possível integração.
+
+## Licença
+Este projeto é distribuído sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+
+>>>>>>> 0cfa6a453088f42ea3f01a76a1a00e81a29a6f0b
