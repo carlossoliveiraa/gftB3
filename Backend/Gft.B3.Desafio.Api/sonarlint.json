@@ -1,0 +1,11 @@
+﻿{
+  "SonarAnalyzer": {
+    "GlobalSettings": {
+      "analyzers": {
+        "SonarAnalyzer.CSharp": {
+          "ruleSetFilePath": "Gft.B3.Desafio.Api.ruleset"
+        }
+      }
+    }
+  }
+}
