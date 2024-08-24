@@ -8,7 +8,7 @@ describe('InvestimentoService', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule],  // Certifique-se de importar o HttpClientTestingModule
+      imports: [HttpClientTestingModule],  
       providers: [InvestimentoService]
     });
     service = TestBed.inject(InvestimentoService);
@@ -16,7 +16,7 @@ describe('InvestimentoService', () => {
   });
 
   afterEach(() => {
-    httpMock.verify(); // Verifica se não há requisições pendentes
+    httpMock.verify();  
   });
 
   it('deve ser criado', () => {
@@ -33,11 +33,11 @@ describe('InvestimentoService', () => {
 
     const req = httpMock.expectOne(service['apiUrl']);
     expect(req.request.method).toBe('POST');
-    req.flush(mockResponse); // Retorna o mockResponse como a resposta da chamada HTTP
+    req.flush(mockResponse);  
   });
 
   it('deve retornar um erro se a API estiver fora do ar', () => {
-    const mockOrcamento = { valorInicial: 1000, prazoMeses: 12 };
+    const mockOrcamento = { valorInicial: 2000, prazoMeses: 12 };
 
     service.calcularInvestimento(mockOrcamento).subscribe(
       () => fail('Deveria ter falhado com um erro de rede'),
@@ -47,6 +47,6 @@ describe('InvestimentoService', () => {
     );
 
     const req = httpMock.expectOne(service['apiUrl']);
-    req.error(new ErrorEvent('Network error')); // Simula um erro de rede
+    req.error(new ErrorEvent('Network error'));  
   });
 });

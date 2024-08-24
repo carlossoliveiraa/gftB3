@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RouterTestingModule],  // Importa o RouterTestingModule para lidar com o <router-outlet>
+      imports: [RouterTestingModule],   
       declarations: [AppComponent],
     }).compileComponents();
   });
@@ -22,11 +22,11 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('InvestimentoApp');
   });
 
-  // Remova ou ajuste este teste, pois não há conteúdo estático esperado no HTML
+  
   it('should render <router-outlet>', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('router-outlet')).not.toBeNull(); // Verifica se o <router-outlet> está presente
+    expect(compiled.querySelector('router-outlet')).not.toBeNull(); 
   });
 });

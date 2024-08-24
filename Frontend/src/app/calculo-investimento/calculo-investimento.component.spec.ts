@@ -31,22 +31,21 @@ describe('CalculoInvestimentoComponent', () => {
 
   it('should call calcularInvestimento on submit with valid data', () => {
     const spy = spyOn(investimentoService, 'calcularInvestimento').and.returnValue(of({}));
-    
-    // Simula a entrada de dados válidos
+       
     component.orcamento = {
-      valorInicial: '1000',
+      valorInicial: '2000',
       prazoMeses: '12'
     };
 
     component.onSubmit();
 
-    expect(spy).toHaveBeenCalled(); // Verifica se o método calcularInvestimento foi chamado
+    expect(spy).toHaveBeenCalled();  
   });
 
   it('should not call calcularInvestimento on submit with invalid data', () => {
     const spy = spyOn(investimentoService, 'calcularInvestimento').and.returnValue(of({}));
     
-    // Simula a entrada de dados inválidos (faltando valores)
+     
     component.orcamento = {
       valorInicial: '',
       prazoMeses: ''
@@ -54,7 +53,7 @@ describe('CalculoInvestimentoComponent', () => {
 
     component.onSubmit();
 
-    expect(spy).not.toHaveBeenCalled(); // Verifica se o método calcularInvestimento não foi chamado
+    expect(spy).not.toHaveBeenCalled();  
     expect(component.warning).toBe('Todos os campos são obrigatórios. Por favor, preencha o valor inicial e o prazo em meses.');
   });
 });

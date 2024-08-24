@@ -20,11 +20,9 @@ export class InvestimentoService {
 
   private handleError(error: HttpErrorResponse) {
     let errorMessage = 'Ocorreu um erro desconhecido!';
-    if (error.status === 0) {
-      // A network error occurred, API might be down
+    if (error.status === 0) {     
       errorMessage = 'A API está indisponível. Por favor, verifique se a API está rodando.';
-    } else {
-      // Backend returned an unsuccessful response code.
+    } else {     
       errorMessage = `Erro ${error.status}: ${error.message}`;
     }
     return throwError(() => new Error(errorMessage));
