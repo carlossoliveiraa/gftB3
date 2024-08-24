@@ -48,7 +48,7 @@ Certifique-se de que você tem as ferramentas necessárias:
 ## Como Testar
 
 ### Testes no Backend
-- No Visual Studio, use o `Test Explorer` para rodar os testes unitários.
+- Os testes unitários foram implementados utilizando `[TestClass]` no Visual Studio. Para executá-los, use o `Test Explorer`.
 
 ### Testes no Frontend
 1. **Instalar Dependências:**
@@ -57,7 +57,7 @@ Certifique-se de que você tem as ferramentas necessárias:
      npm install
      ```
 2. **Executar Testes:**
-   - Rode os testes com o comando:
+   - Os testes foram implementados utilizando Jasmine. Rode os testes com o comando:
      ```bash
      ng test
      ```
