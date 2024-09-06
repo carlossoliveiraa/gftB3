@@ -3,7 +3,7 @@
 
 ## Descrição Geral
 Este projeto calcula o retorno de investimentos em Certificados de Depósito Bancário (CDB), incluindo impostos e o retorno esperado com base na duração do investimento. Ele é composto por uma API desenvolvida em .NET Framework 4.7.2 e uma aplicação frontend em Angular.
-
+##Padrões de Projeto: Utilizei SOLID e Strategy para futuras implementações de calculos. 
 ## Requisitos
 Certifique-se de que você tem as ferramentas necessárias:
 
