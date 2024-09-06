@@ -2,14 +2,14 @@
 # Solução de Cálculo do CDB
 
 ## Descrição Geral
-Este projeto calcula o retorno de investimentos em Certificados de Depósito Bancário (CDB), incluindo impostos e o retorno esperado com base na duração do investimento. Ele é composto por uma API desenvolvida em .NET Framework e uma aplicação frontend em Angular.
+Este projeto calcula o retorno de investimentos em Certificados de Depósito Bancário (CDB), incluindo impostos e o retorno esperado com base na duração do investimento. Ele é composto por uma API desenvolvida em .NET Framework 4.7.2 e uma aplicação frontend em Angular.
 
 ## Requisitos
 Certifique-se de que você tem as ferramentas necessárias:
 
 ### Backend (API .NET)
-- Visual Studio 2019 ou superior
-- .NET Framework 4.8
+- Visual Studio 2019 ou superior. Eu utilizei o vs 2022
+- .NET Framework 4.7.2
 
 ### Frontend (Angular)
 - Node.js 14.x ou superior
@@ -23,10 +23,8 @@ Certifique-se de que você tem as ferramentas necessárias:
    - Navegue até a pasta do backend e abra o arquivo `.sln`.
 
 2. **Restaurar Pacotes:**
-   - No Visual Studio, vá em `Tools > NuGet Package Manager > Package Manager Console` e execute:
-     ```bash
-     Update-Package -Reinstall
-     ```
+   - No Visual Studio, clique com o botao direito em cima do projeto -> Manage Nuget Packages. 
+    
 
 3. **Compilar e Executar:**
    - Pressione `F5` para compilar e executar a API. Ela deve estar disponível em `http://localhost:5000`.
@@ -34,15 +32,13 @@ Certifique-se de que você tem as ferramentas necessárias:
 ### Aplicação Angular (Frontend)
 1. **Instalar Dependências:**
    - Abra o terminal, navegue até a pasta do frontend e execute:
-     ```bash
      npm install
-     ```
+   
 
 2. **Servir a Aplicação:**
    - No mesmo terminal, execute:
-     ```bash
      ng serve
-     ```
+     
    - Acesse `http://localhost:4200` no seu navegador.
 
 ## Como Testar
@@ -53,14 +49,12 @@ Certifique-se de que você tem as ferramentas necessárias:
 ### Testes no Frontend
 1. **Instalar Dependências:**
    - Certifique-se de que todas as dependências estão instaladas:
-     ```bash
-     npm install
-     ```
+       npm install
+    
 2. **Executar Testes:**
    - Os testes foram implementados utilizando Jasmine. Rode os testes com o comando:
-     ```bash
      ng test
-     ```
+     
    - Isso abrirá um navegador e executará os testes automaticamente.
 
 ## Análise de Código
